@@ -2,21 +2,52 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.tic-tac-toe {
+  width: 150px;
+  height: 150px;
+  border: 2px solid black;
 }
 
+.ttt-grid {
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+  float: left;
+  box-sizing: border-box;
+  text-align: center;
+  line-height: 50px;
+}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
 }
 
+.container > *:not(:first-child) {
+  margin-top: 10px;
+}
 
+table, tr, td, th {
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+button {
+  color: white;
+  text-decoration: none;
+  padding: .5em 2em;
+  outline: none;
+  border-width: 2px 0;
+  border-style: solid none;
+  border-color: #FDBE33 #000 #D77206;
+  border-radius: 6px;
+  background: linear-gradient(#F3AE0F, #E38916) #E38916;
+}
+
+button:active{
+  background: linear-gradient(#f59500, #f5ae00) #f59500;
+}
